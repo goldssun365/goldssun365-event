@@ -136,6 +136,32 @@
     .legal-notice{background:#f8fafc;border:1px solid #e5e7eb;border-radius:22px;padding:18px;color:#475569;font-size:13px;margin-top:18px;text-align:center}
     .legal-notice b{color:#1f2937}
 
+    /* 환불 안내 박스 (구매 안내 섹션 위) */
+    .refund-notice{background:linear-gradient(135deg,#fffbeb,#fef3c7);border:2px solid #f59e0b;border-radius:20px;padding:18px 22px;margin:0 0 22px;color:#78350f;font-size:14.5px;line-height:1.7;display:flex;gap:14px;align-items:flex-start}
+    .refund-notice .icon{font-size:24px;line-height:1.2;flex-shrink:0}
+    .refund-notice .body{flex:1}
+    .refund-notice .title{font-size:15px;font-weight:1000;color:#92400e;margin-bottom:4px;letter-spacing:-.02em}
+    .refund-notice .desc{color:#78350f;margin:0}
+    .refund-notice .desc b{color:#7c2d12}
+
+    /* 환불·기술문의 카드 (운영자 문의 섹션) */
+    .refund-policy{background:#fffbeb;border:1px solid #fcd34d;border-radius:18px;padding:18px;margin-top:14px}
+    .refund-policy b{display:block;color:#92400e;margin-bottom:10px;font-size:15px}
+    .refund-policy ul{margin:8px 0 0;padding-left:18px;color:#78350f;font-size:13.5px;line-height:1.7}
+    .refund-policy li{margin:4px 0}
+    .refund-policy li b{display:inline;color:#7c2d12;margin:0;font-size:13.5px}
+
+    /* 유튜브 채널 섹션 (시니어 디지털 창작 아카데미) */
+    .youtube-section{background:linear-gradient(135deg,#fef2f2 0%,#fff7ed 100%);border:1px solid #fecaca;border-radius:30px;padding:38px 30px;box-shadow:0 14px 36px rgba(220,38,38,.1)}
+    .youtube-card{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;max-width:920px;margin:0 auto}
+    .youtube-icon{width:72px;height:72px;background:linear-gradient(135deg,#ef4444,#dc2626);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:36px;color:#fff;flex-shrink:0;box-shadow:0 8px 20px rgba(220,38,38,.25)}
+    .youtube-body{flex:1;min-width:0}
+    .youtube-body h3{margin:0 0 6px;color:#7c2d12;font-size:22px;letter-spacing:-.04em;line-height:1.2}
+    .youtube-body p{margin:0;color:#92400e;font-size:14px;line-height:1.6}
+    .youtube-body p b{color:#7c2d12}
+    .youtube-cta{flex-shrink:0}
+    .btn-youtube{color:#fff;background:linear-gradient(135deg,#ef4444,#dc2626);box-shadow:0 10px 22px rgba(220,38,38,.28)}
+
     footer{padding:30px 0;color:#7c6a46;font-size:13px;border-top:1px solid var(--line);text-align:center}
     footer b{color:#5f4b2b}
 
@@ -146,6 +172,8 @@
       .gift-flow{grid-template-columns:1fr}
       .flow-arrow{transform:rotate(90deg);margin:0 auto}
       .record-grid,.experience-grid,.buy-steps{grid-template-columns:1fr 1fr}
+      .youtube-card{grid-template-columns:1fr;text-align:center}
+      .youtube-icon{margin:0 auto}
       h1{font-size:42px}
       .navlinks{display:none}
     }
@@ -179,6 +207,7 @@
       <a href="#routine">뇌웃음365</a>
       <a href="#flow">선물 동선</a>
       <a href="#buy">구매방법</a>
+      <a href="#youtube">유튜브</a>
     </nav>
     <a class="btn btn-primary" href="https://open.kakao.com/o/sSRB78ri" target="_blank" rel="noopener">9,900원 효도선물 문의</a>
   </div>
@@ -196,7 +225,8 @@
         카네이션은 시들지만<br>
         <b>9,900원 디지털 선물은 평생 함께합니다.</b><br><br>
         어머니의 사진은 <b>9가지 명화</b>로,<br>
-        아버지의 하루는 <b>웃음·노래·박수</b>로.
+        아버지의 하루는 <b>웃음·노래·박수</b>로.<br>
+        <b>가족 4명까지</b> 한 번에 누리는 어버이날 선물.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://open.kakao.com/o/sSRB78ri" target="_blank" rel="noopener">지금 9,900원 효도선물 보내기</a>
@@ -205,7 +235,7 @@
       <div class="proofs">
         <div class="proof"><b>50% 할인</b>19,800원 → 9,900원</div>
         <div class="proof"><b>2종 세트</b>뇌웃음365 + 디지털아트</div>
-        <div class="proof"><b>평생 사용</b>한 번 구매, 평생 활용</div>
+        <div class="proof"><b>가족 4명</b>한 코드로 평생 사용</div>
       </div>
     </div>
     <div class="price-card">
@@ -221,6 +251,7 @@
         <li>✅ <b>뇌웃음365</b>: 웃음·발성·노래·박수·감사 5단계 루틴</li>
         <li>✅ <b>디지털아트</b>: 사진을 9가지 명화 화풍으로 변환</li>
         <li>✅ 반고흐, 뭉크, 바로크, 마그리트 외 5종 화풍</li>
+        <li>✅ <b>통합코드 1개로 가족 4명까지</b> 함께 사용</li>
         <li>✅ 자녀가 송금 → 부모님께 카톡으로 전달</li>
       </ul>
     </div>
@@ -232,7 +263,7 @@
   <div class="wrap">
     <div class="section-title">
       <h2>9,900원으로 드리는 두 가지 선물</h2>
-      <p>어머니의 사진은 명화로, 아버지의 하루는 웃음으로. 정성을 담은 디지털 효도선물 두 가지를 어버이날 한 번에 드립니다.</p>
+      <p>어머니의 사진은 명화로, 아버지의 하루는 웃음으로. 정성을 담은 디지털 효도선물 두 가지를 어버이날 한 번에 드립니다.<br><b>한 번 결제로 가족 4명까지 평생 사용.</b></p>
     </div>
     <div class="two-set">
       <article class="app-card brain">
@@ -427,8 +458,8 @@
       <div class="flow-step">
         <div class="flow-num">4</div>
         <div class="flow-icon">🎨</div>
-        <h3>평생 사용</h3>
-        <p>코드 입력 후<br>평생 활용 가능</p>
+        <h3>가족 4명 사용</h3>
+        <p>한 코드로<br>가족 4명까지 평생</p>
       </div>
     </div>
   </div>
@@ -465,6 +496,13 @@
       <h2>구매 안내</h2>
       <p>카톡으로 문의 후 송금하시면 전용 구매코드와 설치 안내를 보내드립니다.<br>정상가 19,800원 → 어버이날 한정 9,900원에 제공합니다.</p>
     </div>
+    <div class="refund-notice">
+      <div class="icon">⚠️</div>
+      <div class="body">
+        <div class="title">구매 전 꼭 확인해주세요</div>
+        <p class="desc"><b>구매코드 발송 이후에는 디지털 상품 특성상 환불이 불가능합니다.</b> 전자상거래법상 디지털 콘텐츠는 코드가 노출되거나 다운로드가 시작된 시점에 가치가 훼손된 것으로 간주합니다. 구매 전 체험하기로 직접 확인 후 송금해 주세요.</p>
+      </div>
+    </div>
     <div class="buy-steps">
       <div class="buy-step">
         <div class="num">1</div>
@@ -496,11 +534,29 @@
     <div class="cta">
       <div>
         <h2>올해 어버이날,<br>가장 잊지 못할 선물을</h2>
-        <p>9,900원이지만, 부모님께는 평생 가는 마음입니다. 어버이날 마감까지 얼마 남지 않았습니다.</p>
+        <p>9,900원으로 가족 4명까지, 부모님께는 평생 가는 마음입니다. 어버이날 마감까지 얼마 남지 않았습니다.</p>
       </div>
       <div>
         <p class="cta-dday" data-dday>⏳ 어버이날까지 <b>D-9일</b> · 세일 마감 <b>D-16일</b></p>
         <a class="btn btn-primary" href="https://open.kakao.com/o/sSRB78ri" target="_blank" rel="noopener">9,900원 효도선물 보내기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 유튜브 채널 (시니어 디지털 창작 아카데미) -->
+<section id="youtube">
+  <div class="wrap">
+    <div class="youtube-section">
+      <div class="youtube-card">
+        <div class="youtube-icon">📺</div>
+        <div class="youtube-body">
+          <h3>시니어 디지털 창작 아카데미</h3>
+          <p>1년 동안 시니어 부모님을 위해 앱을 만들어온 <b>1인 개발자 명구의 채널</b>입니다. 시·에세이·작사·작곡·영상 제작·전자책 만들기 등 시니어 분들이 디지털로 새로운 창작을 시작하실 수 있도록 하나씩 가르쳐드립니다.<br><b>5월 15일 캠페인 후기 영상 예정.</b> 구독해두시면 다음 시즌 할인 가장 먼저 받아보실 수 있어요.</p>
+        </div>
+        <div class="youtube-cta">
+          <a class="btn btn-youtube" href="#" target="_blank" rel="noopener" id="youtube-link">유튜브 채널 보기</a>
+        </div>
       </div>
     </div>
   </div>
@@ -525,6 +581,15 @@
         <p>"어버이날 2종 세트 구매 원합니다"</p>
         <div class="copybox">
           입금 확인 후 Goldssun365 전용 구매코드 12자리와 설치 안내를 보내드립니다. 받으신 코드를 부모님께 카톡으로 전달하시면 됩니다. 9,900원으로 뇌웃음365와 디지털아트 2종을 평생 사용할 수 있습니다.
+        </div>
+        <div class="refund-policy">
+          <b>🛡 환불·기술문의 안내</b>
+          <ul>
+            <li><b>코드 발급 방식</b>: 통합코드 1개로 가족 4명까지 사용 가능합니다 (직계가족 기준).</li>
+            <li><b>단순 변심</b>: 구매코드 발송 이후에는 환불이 불가합니다.</li>
+            <li><b>기기 미실행</b>: 안드로이드 버전 등 작동 환경 확인 후, 기기 결함이 확인된 경우에 한해 카톡 채팅방으로 문의해 주세요.</li>
+            <li><b>응답 시간</b>: 모든 문의는 카톡 1:1 채팅방에서 영업 시간 후 일괄 답변드립니다.</li>
+          </ul>
         </div>
       </div>
     </div>
